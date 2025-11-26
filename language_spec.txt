@@ -1,0 +1,33 @@
+=== PATTERNSCRIPT LANGUAGE SPECIFICATION ===
+
+PURPOSE: Generate numerical patterns (Fibonacci, Arithmetic, Geometric sequences)
+
+LEXICAL RULES:
+- Keywords: generate, fibonacci, arithmetic, geometric, print, with, steps
+- Identifiers: single letters (a-z)
+- Numbers: integers
+- Operators: +, -, *, /, =
+- Punctuation: (, ), {, }, [, ]
+
+SYNTAX (EBNF):
+program → statement+
+statement → pattern_generation | assignment | print_statement
+pattern_generation → 'generate' pattern_type 'with' steps '=' number
+pattern_type → 'fibonacci' | 'arithmetic' | 'geometric'
+assignment → ID '=' expression
+print_statement → 'print' ID
+expression → term (('+' | '-') term)*
+term → factor (('*' | '/') factor)*
+factor → NUMBER | ID | '(' expression ')'
+
+SEMANTIC RULES:
+- Variables must be declared before use
+- Pattern generation creates sequence arrays
+- All operations are integer-based
+
+EXAMPLE INPUT:
+generate fibonacci with steps = 10
+result = fibonacci[5] * 2
+print result
+
+EXPECTED OUTPUT: 16  (since fib[5]=8, 8*2=16)
