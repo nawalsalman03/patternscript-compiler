@@ -1,1 +1,4 @@
-generate geometric with steps = 5 
+generate fibonacci with steps = 10
+generate geometric with steps = 5
+answer = fibonacci[4] + geometric[3]
+print answer

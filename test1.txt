@@ -1,1 +1,3 @@
-generate fibonacci with steps = 5 
+generate fibonacci with steps = 8
+value = fibonacci[7]
+print value
