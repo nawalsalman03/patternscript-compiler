@@ -69,9 +69,9 @@ patternscript-compiler/
  
 ## Team 
  
-- [Your Name 1] 
-- [Your Name 2] 
-- [Your Name 3] 
+- Nawal Salman 22k-4236 
+- Hafsa Atiqi 22k-4584 
+- Raaiha Syed 22k-4460 
  
 **Course**: CS4031 - Compiler Construction 
 **Semester**: Fall 2025
